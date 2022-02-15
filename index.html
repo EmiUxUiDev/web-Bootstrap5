@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,22 @@
     <script src="https://kit.fontawesome.com/2b4ac1b9f1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ---------------BOOTSTRAP CSS--------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Reformá tú casa ONLINE</title>
 </head>
 
 <body>
     <!-- HEADER CON NAV BAR -->
-    <header>
+    <!-- <header>
         <nav>
             <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
             <label for="nav__checkbox" class="nav__onoff">
@@ -33,10 +38,40 @@
                 <li><a href="pages/empezaahora.html"><button>Empenzá ahora!</button></a></li>
             </ul>
         </nav>
-    </header>  
+    </header>   -->
 
+    <!-- NAVBAR CON BOOTSTRAP -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img id="empresa" src="multimedia/img/Bulbo_prendido.svg"
+                            alt="Logo de la empresa, bulbo encendido" width="55" height="70"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active m-3" aria-current="page" href="pages/sobrenosotros.html">Sobre
+                            nosotros</a>
+                        <a class="nav-link m-3" href="pages/comofunciona.html">Cómo funciona</a>
+                        <a class="nav-link m-3" href="pages/trucospararenovar.html">Trucos para renovar</a>
+                        <a class="nav-link m-3" href="pages/empezaahora.html"><button
+type="button" class="btn btn-warning rounded-pill ">Empenzá ahora!</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <!-- COMIENZA MAIN - SECCION PRINCIPAL -->  
+    </header>
+
+    <!-- COMIENZA MAIN - SECCION PRINCIPAL -->
     <main>
         <!-- BOTON IR ARRIBA -->
         <div class="scroll__btn">
@@ -44,79 +79,95 @@
         </div>
 
         <!-- PANTALLA PRINCIPAL HOME -->
-        <section id="home"> 
+        <section id="home">
             <h1 id="titulo">Hace tú reforma online!</h1>
-                
-                <!-- TARJETA EN PANTALLA PRINCIPAL -->
-                
-                    <div id="comentario">
-                        <i class=" martillo fas fa-hammer"></i>
-                        <h2>REMODELÁ ONLINE</h2>
-                        <h3>Alguna vez imaginaste tener un equipo de profesionales con el cual hacer el proyecto de tú reforma, y sin salir de tú casa?!!</h3>
-                    </div>
-                    <!-- CARD BAJO LA PANTALLA PRINCIPAL HOME -->
-                    <div class="home__card2">
-                        <i class="fas fa-bullhorn"></i>
-                        <div class="parrafos">
-                            <h3>* Simple, desde tú casa</h3>
-                            <h3>*Precios a tú medida</h3>
-                        </div>
-                    </div>
-               
+
+            <!-- TARJETA EN PANTALLA PRINCIPAL -->
+
+            <div id="comentario">
+                <i class=" martillo fas fa-hammer"></i>
+                <h2>REMODELÁ ONLINE</h2>
+                <h3>Alguna vez imaginaste tener un equipo de profesionales con el cual hacer el proyecto de tú reforma,
+                    y sin salir de tú casa?!!</h3>
+            </div>
+            <!-- CARD BAJO LA PANTALLA PRINCIPAL HOME -->
+            <div class="home__card2">
+                <i class="fas fa-bullhorn"></i>
+                <div class="parrafos">
+                    <h3>* Simple, desde tú casa</h3>
+                    <h3>*Precios a tú medida</h3>
+                </div>
+            </div>
+
         </section>
 
-        <!-- SECCION "COMO FUNCIONA" SCROLLDOWN-->    
+        <!-- SECCION "COMO FUNCIONA" SCROLLDOWN-->
         <section class="pasos">
             <div class="pasos__contenedor">
                 <h2>Cómo funciona?</h2>
 
                 <!-- CARD PRIMER PASO -->
-                <div class="pasos__card">
-                    
-                    <img id="primerimg" src="multimedia/img/online.svg">
-                    <div>
-                
-                        <h3>Contanos todo sobre tú idea</h3>
-                        <p>Envianos fotos, audios, videos, todo lo que sume para dejar claro tu idea, inspiración</p>
-                       
-                    </div>  
-                </div>
+                <div class="container my-5">
+                    <div class="row my-5 d-flex justify-content-center">
 
-                <!-- CARD SEGUNDO PASO -->    
-                <div class="pasos__card ">
-                    <img src="multimedia/img/trabajando_juntos.svg">
-                    <div>
-                        <h3>Hacelo junto con tú arqui</h3>
-                        <p>Vas a tener uno exclusivo para que te ayude y armen juntos la idea</p>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex justify-content-center my-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="multimedia/img/online.svg" class="card-img-top"
+                                    alt="Chica sentada en una notebook">
+                                <div class="card-body">
+                                    <h3 class="card-text">Contanos todo sobre tú idea</h3>
+                                    <p class="card-text">Envianos fotos, audios, videos, todo lo que sume para dejar
+                                        claro tu idea, inspiración</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex justify-content-center my-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="multimedia/img/trabajando_juntos.svg" class="card-img-top"
+                                    alt="Chica interactuando con arquitecto">
+                                <div class="card-body">
+                                    <h3 class="card-text">Hacelo junto con tú arqui</h3>
+                                    <p class="card-text">Vas a tener uno exclusivo para que te ayude y armen juntos
+                                        la idea</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex justify-content-center my-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="multimedia/img/dormi 3D.svg" class="card-img-top"
+                                    alt="Habitacion 3D">
+                                <div class="card-body">
+                                    <h3 class="card-text">Mira tú reforma ya en 3D</h3>
+                                    <p class="card-text">Mira las imagenes 3D de lo creado y asegurate de que sea lo que querés</p>
+                                    <p class="card-text">vivenciá cada espacio que quieras reformar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex justify-content-center my-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="multimedia/img/descuentos.svg" class="card-img-top"
+                                    alt="Imagen de descuento, oferta">
+                                <div class="card-body">
+                                    <h3 class="card-text">Hace realidad tú reforma</h3>
+                                    <p class="card-text">Compra asesorada por nuestros profesionales y en tiendas amigas, a los mejores precios.</p>
+                                    <p class="card-text">Obtene decuentos increíbles!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
-                <!-- CARD TERCER PASO -->    
-                <div class="pasos__card">
-                    <img src="multimedia/img/dormi 3D.svg">
-                    <div>
-                        <h3>Mira tú reforma ya en 3D</h3>
-                        <p>Mira las imagenes 3D de lo creado y asegurate de que sea lo que querés</p>
-                        <p>vivenciá cada espacio que quieras reformar</p>
-                    </div>
-                </div>
-
-                <!-- CARD CUARTO PASO -->    
-                <div class="pasos__card" >
-                    <img src="multimedia/img/descuentos.svg">
-                    <div>
-                        <h3>Hace realidad tú reforma</h3>
-                        <p>Compra asesorada por nuestros profesionales y en tiendas amigas, a los mejores precios.       
-                        </p>
-                        <p>Obtene decuentos increíbles!</p>
-                    </div> 
-                </div>
 
                 <!-- CALL TO ACTION BTN "COMENZÁ TÚ REFORMA" -->
-                <a class="btn-empeza" href="pages/empezaahora.html"><button class="btn">Empezá tú reforma ahora</button></a>
+                <a class="btn-empeza" href="pages/empezaahora.html"><button type="button" class="btn btn-warning mb-5 mt-0 rounded-pill p-3">Empezá tú reforma
+                        ahora</button></a>
             </div>
         </section>
-        
+
     </main>
 
     <!-- FOOTER -->
@@ -128,7 +179,8 @@
             <!-- PRIMER COLUMNA - LOGO-->
             <div class="logo">
                 <a href="#"><img src="multimedia/img/Bulbo_prendido.svg" alt="Logo chico de la empresa"></a>
-                <p>Suscribite a nuestro canal de Youtube para ver videos de los mejores trucos para reacondicionar tus espacios y dejarlos únicos!</p>
+                <p>Suscribite a nuestro canal de Youtube para ver videos de los mejores trucos para reacondicionar tus
+                    espacios y dejarlos únicos!</p>
             </div>
             <!-- SEGUNDA COLUMNA - RRSS-->
             <div class="sociales">
@@ -137,8 +189,9 @@
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>
                     <a href="#"><i class="fab fa-twitter-square"></i></a>
-                </div>    
-                <p>No dejes de seguirnos, estamos actualizando siempre informacion y eventos que te pueden ser de mucha utilidad</p>
+                </div>
+                <p>No dejes de seguirnos, estamos actualizando siempre informacion y eventos que te pueden ser de mucha
+                    utilidad</p>
             </div>
 
             <!-- TERCER COLUMNA - CONTACTO -->
@@ -147,11 +200,11 @@
                 <div>
                     <i class="fab fa-whatsapp-square"></i>
                     <p>+54 351 3441306</p>
-                </div>  
+                </div>
                 <div>
                     <p>Av. Velez Sarsfield 1254</p>
                     <p id="ciudad">Córdoba, Argentina</p>
-                </div>    
+                </div>
             </div>
 
             <!-- CUARTA COLUMNA - ESCRIBINOS -->
@@ -160,11 +213,11 @@
                 <h3>Escribinos</h3>
                 <p>Si tenes alguna duda, consulta o comentario, hacelo acá</p>
                 <form action="">
-                    <textarea name="texto"  cols="46" rows="4" placeholder="Me gustaria recibier info..."></textarea> 
+                    <textarea name="texto" cols="46" rows="4" placeholder="Me gustaria recibier info..."></textarea>
                     <input class="enviar" type="submit" value="enviar">
                 </form>
             </div>
-            
+
         </div>
 
         <!-- ULTIMA LINEA - DERECHOS RESERVADOS -->
@@ -173,6 +226,10 @@
             <p>EmiDev &copy 2022 - Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ---------------BOOTSTRAP JS--------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

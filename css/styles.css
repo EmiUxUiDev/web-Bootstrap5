@@ -52,6 +52,8 @@ body{
     background-color:var(--clr-gris-claro);
 }
 
+/* ---------NAVBAR boostrap----------- */
+
 
 /* ---INICIO HEADER/NAVBAR--- */
 header ul img{
@@ -60,9 +62,10 @@ header ul img{
 .nav__checkbox{display: none;}
 .nav__onoff{display: none;}
 
-div img{
+/* div img{
     width: 25%;
-}
+} */
+
 .nav{
     background-color:rgb(255, 255, 255) ; 
 }
@@ -350,12 +353,7 @@ textarea{
 #titulo{
     margin-bottom: 40rem;  
 }
-/* #home img{
-    position: absolute;
-    top:5.5rem;
-    z-index: -1;
-    width: 100vw;
-} */
+
 
 
 /* TARJETA EN PANTALLA PRINCIPAL */
@@ -405,8 +403,6 @@ textarea{
 /* ------CARD BAJO LA PANTALLA PRINCIPAL------ */
 
 .home__card2 i{
-    /* position: absolute; */
-    /* left: 21rem; */
     
     font-size: 4rem;
     color: var(--clr-primario-hover);
@@ -415,9 +411,7 @@ textarea{
     transform: rotate(-15deg);
 }
 .home__card2 div{
-    /* position: absolute; */
-    /* left: 25rem;
-    top: -2rem; */
+  
     background-color: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: var(--radio-fuerte);
@@ -496,7 +490,7 @@ textarea{
 }
 
 /* CALL TO ACTION QUE ME LLEVA A LA PAGINA PARA CARGAR DATOS Y HECER LA REFORMA */
-.btn{
+/* .btn{
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -514,7 +508,7 @@ textarea{
     outline: 6px solid var(--clr-primario-hover);
     background-color: white;
     color: var(--clr-gris-medio);
-}
+} */
 .btn-empeza{
     text-decoration: none;
 }
@@ -1357,7 +1351,7 @@ iframe{
     }
 
     #comentario{
-        margin:9rem auto 0rem auto;
+        margin:10rem auto 0rem auto;
         width: 98%;
         padding: 0.8rem;
         border-radius: var(--radio-fuerte);
