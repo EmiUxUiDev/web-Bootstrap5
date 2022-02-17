@@ -2842,6 +2842,40 @@ iframe{
 
 
     /* --------------------------------------------*/
+
+/* -----------FOOTER-------------- */
+footer{
+    border-radius:6rem 0 0 0;
+}
+.contenedor__footer{
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor__footer div{
+    width: 500px;
+    text-align: center;
+}
+
+.sociales h3{
+    margin-top: 1rem;
+}
+.sociales h3, .sociales p{
+    text-align: center;
+}
+
+.contacto h3, .contacto p{
+    text-align: center;
+}
+
+.comentarios h3, .comentarios p{
+    text-align: center;
+}
+
+/* ------------------------------------------ */
+
+
+
+
     /*------------COMIENZA HOME 1250px------------------- */
 
     #titulo{
